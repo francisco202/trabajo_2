@@ -1,0 +1,65 @@
+.cont{
+	max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.cont> * {
+	padding: 10px;
+	grid-column: col-start / span 12;
+}
+
+.foo{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+}
+.foo> * {
+    grid-column: col-start / span 12;
+}
+
+@media (min-width: 500px) {
+    .c1,.c3{
+        grid-column: col-start / span 6;
+    }
+    .c2,.c4{
+        grid-column: col-start  7/ span 6;
+    }
+    .log{
+        grid-column: col-start  11/ span 2;
+    }
+    .sea{
+        grid-column: col-start / span 10;
+    }
+}
+
+@media (min-width: 700px) {
+    .vid{
+        grid-column: col-start / span 7;
+    }
+    .rec{
+        grid-column: col-start 8 / span 5;
+    }
+    .c1{
+        grid-column: col-start / span 3;
+    }
+    .c2{
+        grid-column: col-start 4 / span 3;
+    }
+    .c3{
+        grid-column: col-start 7 / span 3;
+    }
+    .c4{
+        grid-column: col-start 10 / span 3;
+    }
+    .t{
+        grid-column: col-start / span 7;
+    }
+    .sea{
+        grid-column: col-start 8 / span 4;
+    }
+    .log{
+        grid-column: col-start 12;
+    }
+}

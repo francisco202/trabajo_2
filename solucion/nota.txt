@@ -1,0 +1,4 @@
+En la herramienta de google para modificar el tamaño de las pantallas las paginas no se
+adaptaban, No solo las mias tambien la pagina que habia en el github no se adaptaba.
+
+por eso tuve que "arrastrar" la barra de herramientas de desarrollador.

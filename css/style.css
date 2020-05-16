@@ -1,0 +1,114 @@
+body {
+	margin: 0px;
+}
+
+header {
+	background-color: yellow;
+	padding: 0px;
+	margin: 0px;
+}
+header h1 {
+	margin: 0px;
+	padding: 10px;
+	font-size: 250%;
+}
+
+.tot{
+	max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+}
+.tot > * {
+	padding: 10px;
+	grid-column: col-start / span 12;
+}
+
+.menu {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: green;
+}
+.menu li {
+  float: left;
+  border-right: 1px solid yellow;
+}
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+.menu li:last-child {
+  border-right: none;
+}
+
+
+
+section { 
+	margin-left: 10px;	
+}
+aside {
+	margin-top: 4px;
+}
+aside img {
+    margin-left:10px;
+    width: 200px;
+    height: 100px;
+}
+article {
+    clear: both;
+}
+
+.imagenes li,img{
+	list-style-type: none;
+	width: 100px;
+	height: 100px;
+}
+.imagenes ul{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.banner ul{
+	padding-left: 0%;
+}
+
+footer {
+	clear: both;
+	background-color: yellow;
+	margin: 0px;
+	padding: 5px;
+	border-top: 2px solid black;
+	font-family: Arial;
+}
+
+
+@media (min-width: 500px) {
+	.cont {
+		grid-column: col-start / span 6;
+	}
+	.banner {
+		grid-column: col-start 7 / span 6;
+	}
+}
+  
+@media (min-width: 700px) {
+	.imagenes {
+	  grid-column: col-start / span 2;
+	}
+	.cont {
+	  grid-column: col-start 3 / span 7;
+	}
+	.banner {
+	  grid-column: col-start 10 / span 2;
+	}
+}
+
+ul > *{
+	display: inline;
+}
